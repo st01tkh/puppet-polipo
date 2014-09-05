@@ -1,18 +1,25 @@
 {
   "name": "nrvale0-polipo",
-  "version": "1.1.1"
-  "source": "https://github.com/nrvale0/puppet-polipo",
+  "version": "1.1.1",
   "author": "Nathan Valentine <nrvale0@gmail.com|nathan@puppetlabs.com>",
   "license": "Apache 2.0",
   "summary": "Install and configure Polipo caching proxy.",
+  "source": "https://github.com/nrvale0/puppet-polipo",
+  "project_page": "(https://github.com/nrvale0/puppet-polipo)",
+  "issues_url": "(https://github.com/nrvale0/puppet-polipo/issues)",
+  "tags": ["polipo", "debian", "ubuntu", "caching", "proxy"],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": ["7"]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": ["14.04"]
+    }
+  ],
   "description": "Install and configure Polipo caching proxy.",
-  "project_page": "https://github.com/nrvale0/puppet-polipo",
   "dependencies": [
     { "name": "puppetlabs/stdlib", "version_requirement": ">=3.2.1" }
-  ],
-  "types": [
-
-  ],
-  "checksums": {
-  }
+  ]
 }
