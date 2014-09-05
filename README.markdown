@@ -7,16 +7,16 @@ Currently only supports ::osfamily Debian.
 ## Usage 
 
     class polipo(
-      proxyAddress = undef,
-      allowedClients = undef,
-      proxyname = undef,
-      chunkHighMark = 819200,
-      objectHighMark = 128,
-      diskCacheRoot = undef,
-      maxDiskCacheEntrySize = undef,
-      forbiddenURLs = undef,
-      options = ['any'],
-      p_loglevel = undef,
+      proxyAddress => undef,
+      allowedClients => undef,
+      proxyname => undef,
+      chunkHighMark => 819200,
+      objectHighMark => 128,
+      diskCacheRoot => undef,
+      maxDiskCacheEntrySize => undef,
+      forbiddenURLs => undef,
+      options => ['any'],
+      p_loglevel => undef,
     ) {
 
 where:
