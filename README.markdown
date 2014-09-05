@@ -4,6 +4,8 @@ Install and configure polipo caching web proxy.
 
 Currently only supports ::osfamily Debian.
 
+Note that this module was previously named nvpuppet/polipo.
+
 ## Usage 
 
     class polipo(
