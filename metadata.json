@@ -1,0 +1,18 @@
+{
+  "name": "nrvale0-polipo",
+  "version": "0.1.1"
+  "source": "https://github.com/nrvale0/puppet-polipo",
+  "author": "Nathan Valentine <nrvale0@gmail.com|nathan@puppetlabs.com>",
+  "license": "Apache 2.0",
+  "summary": "Install and configure Polipo caching proxy.",
+  "description": "Install and configure Polipo caching proxy.",
+  "project_page": "https://github.com/nrvale0/puppet-polipo",
+  "dependencies": [
+    { "name": "puppetlabs/stdlib", "version_requirement": ">=3.2.1" }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+  }
+}
