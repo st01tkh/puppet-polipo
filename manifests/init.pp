@@ -18,7 +18,7 @@ class polipo(
   if $allowedClients { validate_string($allowedClients) }
   if $proxyname { validate_string($proxyname) }
   if $diskCacheroot { validate_absolute_path($diskCacheRoot) }
-  if $maxDiskCachEntrySize { validate_re($maxDiskCacheEntrySize, '[0-9]+') }
+  if $maxDiskCacheEntrySize { validate_re($maxDiskCacheEntrySize, '[0-9]+') }
   if $forbiddenURLs { validate_string($forbiddenURLs) }
   if $p_loglevel { validate_string($p_loglevel, '0x[0-9]+') }
 
