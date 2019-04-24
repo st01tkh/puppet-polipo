@@ -14,8 +14,8 @@ class polipo(
   $p_loglevel = undef,
 ) inherits ::polipo::params {
 
-  validate_re($chunkHighMark, '[0-9]')
-  validate_re($objectHighMark, '[0-9]')
+  if $chunkHighMark { validate_re($chunkHighMark, '[0-9]+') }
+  if $objectHighMark { validate_re($objectHighMark, '[0-9]+') }
   validate_array($options)
   if $parentProxy { validate_string($parentProxy) }
   if $socksParentProxy{ validate_string($socksParentProxy) }
