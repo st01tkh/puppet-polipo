@@ -49,11 +49,22 @@ proxyName = "<%= @proxyName %>"
 # Uncomment this if you want to use a parent proxy:
 
 # parentProxy = "squid.example.org:3128"
+<% if @parentProxy -%>
+parentProxy = "<%= @parentProxy %>"
+<% end -%>
 
 # Uncomment this if you want to use a parent SOCKS proxy:
 
 # socksParentProxy = "localhost:9050"
+<% if @socksParentProxy -%>
+socksParentProxy = "<%= @socksParentProxy %>"
+<% end -%>
+
 # socksProxyType = socks5
+<% if @socksParentType -%>
+socksParentType = "<%= @socksParentType %>"
+<% end -%>
+
 
 
 ### Memory

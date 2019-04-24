@@ -2,6 +2,9 @@ class polipo(
   $proxyAddress = undef,
   $allowedClients = undef,
   $proxyname = undef,
+  $parentProxy = undef,
+  $socksParentProxy = undef,
+  $socksProxyType = undef,
   $chunkHighMark = 819200,
   $objectHighMark = 128,
   $diskCacheRoot = undef,
@@ -14,6 +17,9 @@ class polipo(
   validate_re($chunkHighMark, '[0-9]')
   validate_re($objectHighMark, '[0-9]')
   validate_array($options)
+  if $parentProxy { validate_string($parentProxy) }
+  if $socksParentProxy{ validate_string($socksParentProxy) }
+  if $socksProxyType { validate_string($socksProxyType) }
   if $proxyAddress { validate_string($proxyAddress) }
   if $allowedClients { validate_string($allowedClients) }
   if $proxyname { validate_string($proxyname) }
