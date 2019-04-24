@@ -8,6 +8,7 @@ Note that this module was previously named nvpuppet/polipo.
 
 ## Usage 
 
+```
   class { 'polipo':
     chunkHighMark => 819200,
     objectHighMark => 128,
@@ -19,10 +20,15 @@ Note that this module was previously named nvpuppet/polipo.
     maxDiskCacheEntrySize => '-1',
   }
 
+```
+
 where:
 
+```
     proxyAddress => '::0',
     allowedClients => '127.0.0.1, 192.168.0.0/16', 
+
+```
 
 ## Bug reports
 Please file bug reports to Issues on GitHub.
