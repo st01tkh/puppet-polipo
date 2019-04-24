@@ -10,8 +10,8 @@ Note that this module was previously named nvpuppet/polipo.
 
 ```
   class { 'polipo':
-    chunkHighMark => 819200,
-    objectHighMark => 128,
+    chunkHighMark => '819200',
+    objectHighMark => '128',
     proxyAddress => '::0',
     socksParentProxy => '127.0.0.1:9050',
     socksProxyType = 'socks5',
